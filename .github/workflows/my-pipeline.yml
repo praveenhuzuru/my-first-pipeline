@@ -6,8 +6,11 @@ on:
       - main
 
 jobs:
-  say-hello:
+  health-check:
     runs-on: ubuntu-latest
     steps:
-      - name: Print a message
-        run: echo "Pipeline is working! Hello Praveen!"
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run health check
+        run: python3 health_check.py
