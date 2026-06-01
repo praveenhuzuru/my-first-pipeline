@@ -17,3 +17,6 @@ jobs:
 
       - name: Deploy to production
         run: python3 deploy.py
+
+      - name: Monitor deployment
+        run: python3 monitor.py
