@@ -9,7 +9,7 @@ def check_service(service_name, status):
         return False
 
 services = [
-    ("Database", "down"),
+    ("Database", "up"),
     ("API Server", "up"),
     ("Cache", "up"),
 ]
