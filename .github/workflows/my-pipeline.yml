@@ -14,3 +14,6 @@ jobs:
 
       - name: Run health check
         run: python3 health_check.py
+
+      - name: Deploy to production
+        run: python3 deploy.py
